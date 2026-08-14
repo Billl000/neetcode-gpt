@@ -20,4 +20,4 @@ class Solution:
         dL_db = (y_hat - y_true) * y_hat*(1-y_hat)
         dL_dw = dL_db * x 
 
-        return [np.round(dL_dw, 5), np.round(dL_db, 5)]
+        return (np.round(dL_dw, 5), np.round(dL_db, 5))
